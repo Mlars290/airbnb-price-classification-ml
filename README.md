@@ -1,192 +1,191 @@
-# Airbnb Price Classification using Machine Learning
+# 🏡 Airbnb Price Classification using Machine Learning
 
-> End-to-end machine learning project comparing **Logistic Regression** and a **Neural Network** to classify Airbnb listings into high- and low-price categories.
+> **End-to-end machine learning project comparing Logistic Regression and Neural Networks to classify Airbnb listings into high- and low-price categories.**
 
-![Business Brief](images/business-brief.png)
-
----
-
-# Overview
-
-This project was completed as part of the **Break Through Tech AI Machine Learning Foundations** program.
-
-Working through a real-world business scenario, I developed and compared two supervised machine learning models to classify Airbnb listings into **high-price** and **low-price** categories based on listing characteristics.
-
-The project demonstrates the complete machine learning lifecycle, including:
-
-- Business Understanding
-- Exploratory Data Analysis (EDA)
-- Data Cleaning & Preprocessing
-- Feature Engineering
-- Traditional Machine Learning
-- Deep Learning
-- Model Evaluation
-- Business-Focused Recommendations
+![Business Brief](images/business-brief.jpeg)
 
 ---
 
-# Business Problem
+# 📖 Overview
+
+This project was completed through the **Break Through Tech AI Machine Learning Foundations** program.
+
+Working as a **Junior Machine Learning Engineer** for **Trove Analytics**, I developed and compared two supervised machine learning models to classify Airbnb listings into **high-price** and **low-price** categories using listing characteristics.
+
+The project demonstrates the complete machine learning lifecycle—from business understanding and exploratory data analysis to deep learning, model evaluation, and business recommendations.
+
+---
+
+# 💼 Business Problem
 
 ### Company
-
 **Trove Analytics**
 
 ### Role
-
 **Junior Machine Learning Engineer**
 
-Trove Analytics is developing a machine learning solution to help hospitality investment teams identify premium Airbnb listings more efficiently.
+### Objective
 
-The objective was to build a binary classification model capable of predicting whether an Airbnb listing belongs to a **high-price** or **low-price** category based on listing characteristics such as:
+Develop a machine learning model capable of predicting whether an Airbnb listing belongs to a **high-price** or **low-price** category.
 
-- Location
-- Room Type
-- Host Characteristics
-- Property Information
-- Review Metrics
+### Business Value
 
-By automating this process, analysts can reduce manual review time, improve pricing consistency, and make more informed investment decisions.
-
----
-
-# Machine Learning Workflow
-
-- Business Understanding
-- Exploratory Data Analysis (EDA)
-- Data Cleaning
-- Missing Value Handling
-- Feature Engineering
-- One-Hot Encoding
-- Train/Test Split
-- Feature Scaling
-- Logistic Regression
-- Hyperparameter Tuning using GridSearchCV
-- Neural Network (TensorFlow/Keras)
-- Model Evaluation
-- Business Recommendation
+- Reduce manual review time
+- Improve pricing consistency
+- Support hospitality investment decisions
+- Identify premium listings more efficiently
 
 ---
 
-# Technologies Used
+# 🚀 Machine Learning Pipeline
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- TensorFlow
-- Keras
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+```text
+Business Understanding
+        ↓
+Exploratory Data Analysis (EDA)
+        ↓
+Data Cleaning & Preprocessing
+        ↓
+Feature Engineering
+        ↓
+Train/Test Split
+        ↓
+Feature Scaling
+        ↓
+Logistic Regression + GridSearchCV
+        ↓
+Neural Network (TensorFlow/Keras)
+        ↓
+Model Evaluation
+        ↓
+Business Recommendation
+```
 
 ---
 
-# Dataset
+# 🛠 Technologies
 
-- **Dataset:** Airbnb NYC Listings
-- **Records:** 28,000+ Listings
-- **Problem Type:** Binary Classification
-- **Target Variable:** Price Category (High vs. Low)
+| Programming | Machine Learning | Visualization |
+|-------------|-----------------|---------------|
+| Python | Scikit-learn | Matplotlib |
+| Pandas | TensorFlow | Seaborn |
+| NumPy | Keras | Jupyter Notebook |
 
 ---
 
-# Model Performance
+# 📊 Dataset
+
+| Attribute | Value |
+|-----------|-------|
+| Dataset | Airbnb NYC Listings |
+| Records | 28,000+ |
+| Problem Type | Binary Classification |
+| Target Variable | Price Category (High vs. Low) |
+
+---
+
+# 📈 Model Performance
 
 | Model | Accuracy | F1 Score |
 |-------|---------:|---------:|
 | Logistic Regression | **81.1%** | **0.557** |
-| Neural Network | **83.3%** | **0.621** |
+| 🧠 Neural Network | **83.3%** | **0.621** |
 
-![Model Results](images/model-results.png)
+![Model Results](images/model-results.jpeg)
 
 ---
 
-# Training Performance
+# 📉 Training Performance
 
 ## Training & Validation Loss
 
-![Training Loss](images/training-loss.png)
+![Training Loss](images/training-loss.jpeg)
 
-The loss curves steadily decreased throughout training while validation loss remained stable, indicating that the model successfully learned meaningful patterns without significant overfitting.
-
----
-
-## Training & Validation Accuracy
-
-![Training Accuracy](images/training-accuracy.png)
-
-Training and validation accuracy increased consistently throughout training, with only a small gap between the curves. This suggests the neural network converged effectively while maintaining good generalization performance.
+The loss curves steadily decreased while validation loss remained stable, indicating that the neural network learned meaningful patterns without significant overfitting.
 
 ---
 
-# Key Skills Demonstrated
+## 📈 Training & Validation Accuracy
 
-- Exploratory Data Analysis (EDA)
-- Data Cleaning & Preprocessing
-- Feature Engineering
-- Feature Scaling
-- Logistic Regression
-- Hyperparameter Tuning
-- GridSearchCV
-- Neural Networks
-- TensorFlow / Keras
-- Binary Classification
-- Model Evaluation
-- Data Visualization
-- Business Analytics
+![Training Accuracy](images/training-accuracy.jpeg)
+
+Training and validation accuracy increased consistently throughout training with only a small gap between the curves, suggesting good generalization performance.
 
 ---
 
-# Business Recommendation
+# 🎯 Key Skills Demonstrated
 
-The neural network achieved the strongest overall performance with an **accuracy of 83.3%** and an **F1 score of 0.621**, outperforming the logistic regression model on both evaluation metrics.
-
-Although the neural network required additional training time and was less interpretable than logistic regression, its improved predictive performance justified the added complexity for this classification task.
-
----
-
-# Future Improvements
-
-Future enhancements could include:
-
-- Evaluate Random Forest and XGBoost models.
-- Address class imbalance using resampling techniques.
-- Perform additional feature engineering.
-- Deploy the model as an interactive web application.
-- Evaluate model performance on unseen production data.
+- 📊 Exploratory Data Analysis (EDA)
+- 🧹 Data Cleaning & Preprocessing
+- ⚙️ Feature Engineering
+- 📈 Feature Scaling
+- 🤖 Logistic Regression
+- 🔍 Hyperparameter Tuning (GridSearchCV)
+- 🧠 Neural Networks
+- ⚡ TensorFlow / Keras
+- 📉 Model Evaluation
+- 📊 Data Visualization
+- 💼 Business Analytics
 
 ---
 
-# Repository Structure
+# 💡 Business Recommendation
+
+The neural network achieved the strongest overall performance with an **accuracy of 83.3%** and an **F1 score of 0.621**.
+
+Although it required additional training time and was less interpretable than Logistic Regression, its improved predictive performance justified the added complexity for this classification task.
+
+---
+
+# 🔮 Future Improvements
+
+- Implement Random Forest and XGBoost models
+- Address class imbalance through resampling techniques
+- Experiment with additional feature engineering
+- Deploy the model as a web application
+- Evaluate performance on unseen production data
+
+---
+
+# 📂 Repository Structure
 
 ```text
 airbnb-price-classification-ml/
 │
-├── Airbnb_Price_Classification.ipynb
 ├── Airbnb_Price_Classification_Capstone.ipynb
 ├── README.md
 ├── airbnbData_train.csv
 ├── airbnb_model.pkl
 │
 └── images/
-    ├── business-brief.png
-    ├── training-loss.png
-    ├── training-accuracy.png
-    └── model-results.png
+    ├── business-brief.jpeg
+    ├── training-loss.jpeg
+    ├── training-accuracy.jpeg
+    └── model-results.jpeg
 ```
 
 ---
 
-# Learning Outcomes
+# 🎓 Learning Outcomes
 
-This project strengthened my understanding of the complete machine learning lifecycle by applying traditional machine learning and deep learning techniques to a real-world business problem. It provided hands-on experience with exploratory data analysis, feature engineering, model optimization, neural networks, and communicating technical findings through business-focused recommendations.
+Through this project, I strengthened my understanding of:
+
+- End-to-end machine learning workflows
+- Data preprocessing and feature engineering
+- Logistic Regression
+- Neural Networks
+- Hyperparameter tuning
+- Model evaluation using Accuracy and F1 Score
+- Translating technical findings into business recommendations
 
 ---
 
-# About
+# 👩‍💻 About
 
-**Created by Maria Larson**
+**Maria Larson**
+
+B.S. Data Science | Applied AI | Machine Learning | Product Analytics
 
 Completed through the **Break Through Tech AI Machine Learning Foundations** program.
 
-This repository demonstrates an end-to-end machine learning workflow that compares traditional machine learning with deep learning to solve a real-world binary classification problem.
+This repository showcases an end-to-end machine learning workflow that compares traditional machine learning with deep learning to solve a real-world binary classification problem.
